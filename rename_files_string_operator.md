@@ -22,7 +22,7 @@ e.g., **File name.pdf** becomes **File_name.pdf**
 e.g. **123 file name.pdf** becomes **123.pdf**
 
 ```bash
-for file in *.pdf; do mv "${file}" "${file/\ */.pdf}"; done
+for file in *.pdf; do mv "${file}" "${file//\ */.pdf}"; done
 ```
 
 Here the `${var//pattern/replacement}` operator is used. It means replacing **the first space and the following characters** with **.pdf**
