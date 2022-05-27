@@ -80,6 +80,33 @@ the /% form requires the match to occur at the end of the string. This can be us
 
 In every form, /string may be omitted, causing the text matched by pattern to be deleted.
 
+## Extract patterns from filenames
+
+1. To extract the pattern of 'Firstname Lastname':
+
+```
+ls
+#two files
+#'1761754 - Ma Xu abm_cw3_3314358_244875942.pdf'
+#'17676 - Mi Pan ABMReport_3314358_910887307.docx'
+ls | grep -oE '[[:alpha:]]+ [[:alpha:]]+'
+# output
+# Ma Xu
+# Mi Pan
+ls | grep -oE '[[:alpha:]]+ [[:alpha:]]+' > results.txt
+# to output the extracted patterns into a txt file
+```
+
+Explanation:
+
+grep -o means to output the extracted patterns;
+
+grep -E means using extended regular expression grammar;
+
+[[:alpha:]]+ means to match one or more alpha letter
+
+
+
 
 
 
