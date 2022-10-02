@@ -6,6 +6,40 @@
 less 1.zip
 ```
 
+## Creating a zip file and adding files to this zip
+
+```
+# Syntax
+zip [options] zipfile files_list
+```
+
+**-r Option:** To zip a directory recursively, use the -r option with the zip command and it will recursively zips the files in a directory. This option helps you to zip all the files present in the specified directory.
+
+If -r is not used, the folder will be added to the zip but the files in the folder are not added.
+
+```
+zip -r zip_file.zip file_1 folder_1
+```
+
+Given an existing zip file, if you want to remove a file from the zip archive, you can use the **-d option**
+
+```
+zip test.zip 1.txt 2.txt
+# remove 1.txt
+zip -d test.zip 1.txt
+less test.zip
+# to add 1.txt back to the test.zip
+zip test.zip 1.txt
+```
+
+If you want to update a file in the zip archive, you can use the **-u option**
+
+```
+zip test.zip 1.txt 2.txt
+# update 1.txt
+zip -u test.zip 1.txt
+```
+
 ## Unzip to a folder with the same name as the file
 
 Option 1 is to use the `unar` command:
