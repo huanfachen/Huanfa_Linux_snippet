@@ -20,10 +20,29 @@ Last update: 2023/05/30
 
 3. To do something conditioning on whether a cell A3 is blank
 
-   ```basic
+   ```visual basic
    =if(isblank(A3), sth, sth_else)
    ```
 
-   
+4. To count the number of cells in a range (Column A) that equals to a value ("")
 
-4. 
+   ```
+   =count(A:A,"")
+   ```
+
+5. To count the number of cells that meets a criterion (greater than 5)
+
+   ```visual basic
+   =countif(A:A,">5")
+   ```
+
+6. To count the number of cells that meets multiple criteria from multiple columns. Note that countifs doesn't work with isnumber or isna
+
+   ```
+   =countifs(A:A,">5",B:B,"")
+   ```
+
+7. 
+
+ 
+
