@@ -4,13 +4,13 @@ Author: Huanfa Chen
 
 Last update: 2023/05/30
 
+The Google sheet used for code demonstration: [here](https://docs.google.com/spreadsheets/d/1oniOL0mffvB3OTnuo8rBeRgQR7cxhb5POHdLZYfPj-A/edit?usp=sharing)
+
 1. To exclude a value in Cell A3 from a list 
 
    ```basic
    =filter({"aa","bb","cc","dd","ee"},{"aa","bb","cc","dd","ee"}<>A3)
    ```
-
-   
 
 2. To randomly pick up a value from a list that excludes a value in A3. Note that the random selection depends on all cells in this speadsheet, meaning that if you change any cell in the spreadsheet, the random value will change.
 
