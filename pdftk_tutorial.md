@@ -30,7 +30,7 @@ Below are some common PDF tasks and solutions:
 
    ```pdftk in1.pdf burst output page_%04d.pdf``` 
 
-7. Count the number of words in a pdf (Note: pdftotext is not part of pdftk)
+7. Count the number of words in a pdf (Note: pdftotext is not part of pdftk; to install this function in Linux Ubuntu, using *sudo apt-get install poppler-utils*)
 
    ```pdftotext myfile.pdf - | wc -w```
 
