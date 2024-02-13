@@ -42,7 +42,13 @@ The Google sheet used for code demonstration: [here](https://docs.google.com/spr
    =countifs(A:A,">5",B:B,"")
    ```
 
-7. 
+7. To group by a column and get the sum of the values in another column (using SQL syntax)
+
+   ```
+   =QUERY(A2:C8,"select A, sum(D) group by A")
+   ```
+
+   
 
  
 
