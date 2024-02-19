@@ -3,6 +3,6 @@
 ## Finding original messages by subject "RE" replies
 
 ```
-subject:"Voice Mail" NOT subject:"Re:"
+subject:"<something>" NOT subject:"Re:"
 ```
 

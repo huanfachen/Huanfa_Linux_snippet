@@ -36,19 +36,35 @@ The Google sheet used for code demonstration: [here](https://docs.google.com/spr
    =countif(A:A,">5")
    ```
 
-6. To count the number of cells that meets multiple criteria from multiple columns. Note that countifs doesn't work with isnumber or isna
+6. To count the rows where the Column A value equals Column B (Note that you should use **countifs** rather than **countif**)
+
+   ```
+   =COUNTIFS(A3:A33,B3:B33)
+   or
+   =COUNTIFS(A:A,B:B)
+   ```
+
+7. To count the number of cells that meets multiple criteria from multiple columns. Note that countifs doesn't work with isnumber or isna
 
    ```
    =countifs(A:A,">5",B:B,"")
    ```
 
-7. To group by a column and get the sum of the values in another column (using SQL syntax)
+8. To group by a column and get the sum of the values in another column (using SQL syntax)
 
    ```
    =QUERY(A2:C8,"select A, sum(D) group by A")
    ```
 
+9. To get the number of occurrences of a value in a column (using SQL syntax)
+
+   ```
+    =QUERY(W:W,"select W, count(W) group by W")
+   ```
+
    
 
- 
+
+
+
 
